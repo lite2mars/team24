@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<style>
+			* {
+					margin: 0;
+					padding: 0;
+					font-family: Times New Roman;
+				}
+
+				body{background-image: url('flower.png');
+					background-attachment: fixed;
+					background-size: 100% 100%;}
+
+				.row {
+					display: flex;
+					height: 88%;
+					align-items: center;
+				}
+
+				.col {
+					flex-basis: 80%;
+					padding:25px;
+				}
+
+				h1 {
+					color: white;
+					font-size: 100px;
+					text-shadow: 0 0 12px #FF0000, 0 0 20px #0000FF;;
+					
+				}
+
+				p {
+					color: white;
+					font-size: 40px;
+					line-height: 50px;
+					font-weight:bold;
+					text-shadow: 0 0 10px #FF0000, 0 0 18px #0000FF;
+					
+				}
+
+				button {
+					width: 180px;
+					color: black;
+					font-size: 15px;
+					padding: 12px 0;
+					background: #fff;
+					border: 0;
+					border-radius: 20px;
+					outline: none;
+					margin-top: 30px;
+					
+				}
+
+				.card {
+					width: 200px;
+					height:230px;
+					display: inline-block;
+					border-radius: 10px;
+					padding: 12px 25px;
+					box-sizing: border-box;
+					cursor: pointer;
+					margin: 10px 15px;
+					background-image: url('burito.jpg');
+					background-position: center;
+					background-size: cover;
+					transition: transform 0.5s;
+				}
+
+				.card1 {
+					background-image: url('mac1.jpg');
+				}
+
+				.card2 {
+					background-image: url('pancake1.jpg');
+				}
+
+				.card3 {
+					background-image: url('roti1.jpg');
+				}
+
+				.card4 {
+					background-image: url('udang1.jpg');
+				}
+
+				.card: hover {
+					transform: translateY(-10px);
+				}
+
+				h5 {
+					color: #fff;
+					text-shadow: 0 0 5px #999;
+					
+				}
+
+				.card p {
+					text-shadow: 0 0 5px #000;
+					font-size: 8px;
+
+				}
+				
+				/*Responsive Tabs Bar*/		
+			/* Add color to the top navigation */
+			.topnav {
+			  background-color: #7cacb9;
+			  overflow: hidden;
+			  margin-top:-0.3%;
+			}
+
+			/* Style the links inside the navigation bar */
+			.topnav a {
+			  float: left;
+			  display: block;
+			  color: white;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 25px;
+			  
+			}
+
+			/* Change the color of links on hover */
+			.topnav a:hover {
+			  background-color: #cba79d;
+			  color: white;
+			}
+
+			/* Add an active class to highlight the current page */
+			.topnav a.active {
+			  background-color: #5a97a7;
+			  color: white;
+			}
+
+			/* Hide the link that should open and close the topnav on small screens */
+			.topnav .icon {
+			  display: none;
+			}
+			
+			section{ 
+				top: 0;
+				left:0;
+				width:80%;
+				height: 80%;
+				margin-right:10%;
+				margin-left:10%;
+				padding:60px 0;
+				}
+				
+			.space{
+				padding: 10px}
+				
+		
+		</style>
+	</head>
+	<body>
+		<header class="space">
+			<img src="header.png" alt="header" width="100%">
+			
+			<!-- Responsive Tabs Bar -->
+			<div class="topnav" id="myTopnav">
+			  <a href="home.html">Home</a>
+			  <a href="recipe.html">Recipes</a>
+			  <a href="About-Us.html">About Us</a>
+			  <a href="contact.html">Contact Us</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+			</div>
+		</header>
+		
+		<section>
+		<div class= "row">
+		
+			<div class= "col">
+				<center>
+					<h1>Our Collection</h1>
+					<p>We are dedicated to help you get out of your boring meals!</p>
+					<a href="recipe.html">
+						<button type= "button"> Explore</button>
+					</a>
+				</center>
+			</div>
+			
+			<div class="col">
+				<a href="D2.html">
+					<div class= "card card1">
+						<center>
+							<h5>Tomato Cheese Pasta</h5>
+						</center>
+					</div>
+				</a>
+				<a href="B3.html">
+					<div class= "card card2">
+						<center>
+							<h5>Honey Hotteok</h5>
+						</center>
+					</div>
+				</a>
+				<a href="B1.html">
+					<div class= "card card3">
+						<center>
+							<h5>Tuna Melt Sandwich</h5>
+						</center>
+					</div>
+				</a>
+				<a href="D1.html">
+					<div class= "card card4">
+						<center>
+							<h5>Thai Prawn Curry</h5>
+						</center>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	</section>
+	
+	
+
+
+</body>
+
+</html>
